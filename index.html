@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>TODO(JS)</title>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <div id="app">test</div>
-
+    <div class="input-area">
+      <input placeholder="TODOを入力" />
+      <button>追加</button>
+    </div>
+    <div class="inprogress-area">
+      <p>未完了のTODO</p>
+      <ul>
+        <!-- ulタグ直下にdivタグはアンチパターン。liタグの中に配置-->
+        <li>
+          <div>
+            <p>TODO</p>
+            <button>完了</button>
+            <button>削除</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="done-area">
+      <p>完了のTODO</p>
+      <ul>
+        <!-- ulタグ直下にdivタグはアンチパターン。liタグの中に配置-->
+        <li>
+          <div>
+            <p>Done</p>
+            <button>戻す</button>
+          </div>
+        </li>
+      </ul>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
